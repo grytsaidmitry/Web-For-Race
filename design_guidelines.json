@@ -1,0 +1,128 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 2 (Performance Pro) mixed with Archetype 7 (Electric & Neon)",
+  "design_philosophy": "Tactical Minimalism meets Electric Neon. The platform should feel like an immersive, high-performance racing command center or F1 steering wheel dashboard. Dark backgrounds (obsidian/carbon) with sharp, vibrant neon accents to highlight critical data like braking points, telemetry, and track limits.",
+  "colors": {
+    "background": {
+      "primary": "#050505",
+      "secondary": "#0A0A0A",
+      "tertiary": "#121212"
+    },
+    "foreground": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#52525B"
+    },
+    "brand": {
+      "primary": "#00FF66",
+      "primary_hover": "#00CC52",
+      "secondary": "#FF2A5F",
+      "accent": "#007AFF"
+    },
+    "borders": {
+      "default": "rgba(255, 255, 255, 0.1)",
+      "active": "#00FF66",
+      "error": "#FF2A5F"
+    },
+    "telemetry": {
+      "speed": "#007AFF",
+      "throttle": "#00FF66",
+      "brake": "#FF2A5F",
+      "gear": "#F59E0B"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "primary": "Bebas Neue",
+      "secondary": "IBM Plex Sans",
+      "mono": "JetBrains Mono"
+    },
+    "sizes": {
+      "h1": "text-5xl sm:text-6xl tracking-tight uppercase",
+      "h2": "text-3xl sm:text-4xl tracking-tight uppercase",
+      "h3": "text-xl sm:text-2xl tracking-tight uppercase",
+      "body": "text-base tracking-normal",
+      "mono": "text-sm tracking-tighter"
+    },
+    "weights": {
+      "headings": "font-black",
+      "body": "font-normal",
+      "labels": "font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Control Room Grid. Density and precision are key for telemetry and data panels. Use wide spacing for marketing pages and tight padding for dashboards.",
+    "container_padding": "p-6 md:p-8",
+    "gap": "gap-4 md:gap-6",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6",
+    "border_radius": "rounded-none sm:rounded-sm"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-brand-primary text-black font-bold uppercase tracking-wider hover:bg-brand-primary-hover transition-colors shadow-[0_0_15px_rgba(0,255,102,0.3)] hover:shadow-[0_0_25px_rgba(0,255,102,0.6)]",
+      "secondary": "bg-transparent border border-white/20 text-white hover:border-white hover:bg-white/5 transition-all uppercase tracking-wider",
+      "ghost": "bg-transparent text-foreground-secondary hover:text-white transition-colors"
+    },
+    "cards": {
+      "base": "bg-background-secondary border border-white/10 backdrop-blur-sm",
+      "hover": "hover:border-brand-primary/50 transition-colors duration-300 hover:shadow-[0_0_15px_rgba(0,255,102,0.1)]",
+      "glass": "bg-black/60 backdrop-blur-xl border border-white/10"
+    },
+    "inputs": {
+      "base": "bg-background-tertiary border-white/10 text-white focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all font-mono"
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 bg-background-primary/80 backdrop-blur-xl border-b border-white/10",
+      "links": "text-sm uppercase tracking-[0.1em] font-bold text-foreground-secondary hover:text-white transition-colors"
+    }
+  },
+  "media": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1696841748798-d3d6cfdbafc7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHxmb3JtdWxhJTIwMSUyMHJhY2luZyUyMGRhcmt8ZW58MHx8fHwxNzc2MTk0OTg5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Blurred motion F1 racing car on track (dark overlay recommended)",
+        "usage": "Hero section background with dark overlay for landing page"
+      },
+      "f1_car": {
+        "url": "https://images.unsplash.com/photo-1614949194403-9602bdc14a3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxmb3JtdWxhJTIwMSUyMHJhY2luZyUyMGRhcmt8ZW58MHx8fHwxNzc2MTk0OTg5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Red and black F1 car",
+        "usage": "F1 category showcase or fallback image when 3D model is loading"
+      },
+      "gt3_car": {
+        "url": "https://images.unsplash.com/photo-1757700439183-e60d395a2b2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxndDMlMjByYWNlJTIwY2FyJTIwZGFya3xlbnwwfHx8fDE3NzYxOTQ5ODl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "GT3 Race car speeding",
+        "usage": "GT3/GT4 category showcase"
+      },
+      "telemetry_dashboard": {
+        "url": "https://images.unsplash.com/photo-1739307336924-166d2e5dac33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxzdGVlcmluZyUyMHdoZWVsJTIwcmFjaW5nJTIwZGFya3xlbnwwfHx8fDE3NzYxOTUwMDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Steering wheel dashboard in dark lighting",
+        "usage": "Telemetry/Engineer mode feature highlight background"
+      },
+      "track_abstract": {
+        "url": "https://images.unsplash.com/photo-1646826795556-7c6c5462bb78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxuZW9uJTIwcmFjZSUyMHRyYWNrJTIwZGFya3xlbnwwfHx8fDE3NzYxOTUwMDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Neon pink abstract track/lines",
+        "usage": "Background texture for Trajectory Simulator or Track Guide sections"
+      }
+    }
+  },
+  "motion_and_interactions": {
+    "page_transitions": "Fade in with slight upward translation (framer-motion).",
+    "hover_effects": "1px borders light up in neon colors; subtle glow drop-shadows on cards.",
+    "3d_interactions": "When clicking a car card, trigger a framer-motion layout expansion, load the Three.js canvas in the center, and rotate the model 360 degrees slowly. Use @react-three/drei's PresentationControls."
+  },
+  "libraries_and_tools": {
+    "icons": "lucide-react for UI icons, raw SVG for track maps",
+    "charts": "recharts (Customized with neon colors, pure black backgrounds, straight lines instead of curves for a tactical feel)",
+    "3d": "@react-three/fiber, @react-three/drei (Use <Environment preset='night'> and neon point lights for rendering cars)",
+    "animations": "framer-motion"
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Tailwind config with the specified neon colors and sharp border radii.",
+    "2. Use Bebas Neue for all main section headers and JetBrains Mono for data points/telemetry numbers.",
+    "3. Build a hero section with 'hero_bg' overlaid with bg-black/70 and a stark, highly contrasted CTA.",
+    "4. For Track Guides, implement a bento grid showing an SVG track map, telemetry chart (Recharts), and braking point data list.",
+    "5. For the 3D Car Viewer, use @react-three/fiber. Since real car models might not be locally available, render a placeholder low-poly sports car geometry or use realistic Box geometries with neon wireframes if a GLTF is missing, and label them properly.",
+    "6. Subscription page should use the 'Tracing Beam' or glowing border concept for the Premium tier.",
+    "7. Every interactive element must have a 'data-testid' attribute (e.g., data-testid='f1-select-btn')."
+  ]
+}
